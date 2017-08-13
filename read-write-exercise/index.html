@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Firebase Web Basics</title>
+</head>
+<body>
+
+    <div align="left">
+      <h1 id="fireHeading" align="left">Firebase Web App</h1>
+      <textarea id="mainText" placeholder="Enter text here..."></textarea>
+      <button id="submitBtn" onclick="submitClick()">Submit</button>
+    </div>
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDivRDNdvJriYmJHzEuwgu2cbg_UZuLgF0",
+        authDomain: "read-write-c3d36.firebaseapp.com",
+        databaseURL: "https://read-write-c3d36.firebaseio.com",
+        projectId: "read-write-c3d36",
+        storageBucket: "read-write-c3d36.appspot.com",
+        messagingSenderId: "466092036554"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
